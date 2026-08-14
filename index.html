@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Hryu의 프로젝트와 기록을 소개하는 개인 홈페이지입니다."
+    />
+    <title>Hryu — Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="logo" href="#top" aria-label="홈으로 이동">HR.</a>
+        <nav aria-label="주요 메뉴">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </header>
+
+      <main id="top">
+        <section class="hero" aria-labelledby="hero-title">
+          <p class="eyebrow">Hello, world!</p>
+          <h1 id="hero-title">
+            안녕하세요.<br />
+            <span>Hryu의 공간</span>입니다.
+          </h1>
+          <p class="hero-copy">
+            배우고, 만들고, 기록합니다.<br />
+            이곳에는 제가 진행한 프로젝트와 생각을 차곡차곡 담아갈 예정입니다.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#projects">프로젝트 보기</a>
+            <a class="button secondary" href="https://github.com/hryu-hufs">GitHub 방문</a>
+          </div>
+        </section>
+
+        <section id="about" class="section about" aria-labelledby="about-title">
+          <div>
+            <p class="section-label">01 / About</p>
+            <h2 id="about-title">새로운 것을 탐구하고<br />직접 만들어 봅니다.</h2>
+          </div>
+          <p>
+            아직 소개글을 작성하는 중입니다. 관심 분야와 경험, 지금 배우고 있는
+            내용을 여기에 자유롭게 적어 보세요. 짧고 솔직한 소개면 충분합니다.
+          </p>
+        </section>
+
+        <section id="projects" class="section" aria-labelledby="projects-title">
+          <div class="section-heading">
+            <div>
+              <p class="section-label">02 / Projects</p>
+              <h2 id="projects-title">Selected work</h2>
+            </div>
+            <p>프로젝트가 생기면 아래 카드를 수정해 주세요.</p>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card featured">
+              <div class="card-number">01</div>
+              <div>
+                <p class="tag">Web · 2026</p>
+                <h3>My Homepage</h3>
+                <p>GitHub Pages로 만든 첫 번째 개인 홈페이지입니다.</p>
+              </div>
+              <a href="https://github.com/hryu-hufs/hryu-hufs.github.io" aria-label="My Homepage 저장소 보기">↗</a>
+            </article>
+
+            <article class="project-card empty">
+              <div class="card-number">02</div>
+              <div>
+                <p class="tag">Coming soon</p>
+                <h3>Next Project</h3>
+                <p>다음 프로젝트를 위한 자리입니다.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
+
+      <footer id="contact">
+        <div>
+          <p class="section-label">03 / Contact</p>
+          <h2>함께 이야기해요.</h2>
+        </div>
+        <a class="contact-link" href="https://github.com/hryu-hufs">github.com/hryu-hufs ↗</a>
+        <p class="copyright">© <span id="year"></span> Hryu</p>
+      </footer>
+    </div>
+
+    <script>
+      document.querySelector("#year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
