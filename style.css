@@ -73,9 +73,10 @@ img{display:block;max-width:100%}
 .resume-item{position:relative;margin:0 8px 0 24px;padding:8px 0 0 16px;font-size:18px;line-height:1.35}
 .resume-item:before{position:absolute;top:18px;left:0;width:5px;height:5px;background:#222;content:""}
 .resume-item p{margin:0}
+.resume-section:not(.education) .resume-item{min-height:87px}
 .education{margin-top:28px}
-.education .resume-item{margin-top:0;padding-top:7px;line-height:1.35}
-.education .resume-item:before{top:17px}
+.education .resume-item{min-height:112px;margin-top:0;padding-top:20px;line-height:1.35}
+.education .resume-item:before{top:30px}
 .pi-footer{margin-top:12px}
 
 @media(max-width:720px){
